@@ -32,6 +32,6 @@ class Payload implements PayloadInterface
      */
     public function get(string|int $name, $default = null): mixed
     {
-        return $this->data[$name] ?? null;
+        return $this->data[$name] ?? $default;
     }
 }
