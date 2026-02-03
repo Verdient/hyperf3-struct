@@ -6,25 +6,30 @@ namespace Verdient\Hyperf3\Struct;
 
 /**
  * 计数器
+ *
  * @author Verdient。
  */
 class Counter
 {
     /**
      * 累加
+     *
      * @author Verdient。
      */
     protected int $aggregate = 0;
 
     /**
      * 数量
+     *
      * @author Verdient。
      */
     protected int $count = 0;
 
     /**
      * 收集
+     *
      * @param int $number 数值
+     *
      * @author Verdient。
      */
     public function collect(int $number)
@@ -35,7 +40,7 @@ class Counter
 
     /**
      * 获取累加值
-     * @return int
+     *
      * @author Verdient。
      */
     public function getAggregate(): int
@@ -45,7 +50,7 @@ class Counter
 
     /**
      * 获取数量
-     * @return int
+     *
      * @author Verdient。
      */
     public function getCount(): int
@@ -55,6 +60,7 @@ class Counter
 
     /**
      * 转换为数组
+     *
      * @author Verdient。
      */
     public function toArray()
